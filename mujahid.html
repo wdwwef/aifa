@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+ 
+
+
+</head>
+<style>
+  body{
+    background-color: turquoise;;
+  }
+
+.parallax2{
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bi{
+  font-size: 30px;;
+  color:blue;
+}
+
+  .my{background-color:white;}
+  body{ background-color: white;}
+
+  
+  .polaroid {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+#div1 {
+  font-size:48px;
+}
+
+.zoom {
+  
+  
+  transition: transform .2s;
+  
+  
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+.service-box{ text-align: center;}
+.service-box i.fa{
+  color:olive;
+  font-size: 70px;
+}
+
+.bg-img{background-image: url("https://img.freepik.com/free-photo/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-72869.jpg?w=1380&t=st=1693224676~exp=1693225276~hmac=03bb8824e9019ff84f3a803019c23e9c832c80af837304c03704c58c1c95157a"); image-no:repeat;}
+.bg-img2
+
+.img{background-image: url("http://www.nicdarkthemes.com/themes/donation/wp/demo/charity/wp-content/uploads/sites/2/2020/06/paral-10.jpg");}
+
+.btn1{font-size: 1rem;
+      font-weight: 500;
+      color:var(--primary-color);
+}
+
+.center1{padding-top: 100px;}
+</style>
+
+<body>
+
+  <script>
+    function smile() {
+      var a;
+      a = document.getElementById("div1");
+      a.innerHTML = "&#xf118;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf11a;";
+        }, 1000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf119;";
+        }, 2000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf11a;";
+        }, 3000);
+    }
+    smile();
+    setInterval(smile, 4000);
+    </script>
+
+<nav class="navbar navbar-expand-sm my p-3 ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="imran/loggo2.jpg" width="130" height="60"/></a>
+    <button class="navbar-toggler " type="button text-dark" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-end" id="collapsibleNavbar">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="kalamaabout.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Contact</a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Donation</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-primary ">Primary</button>
+        </li>    
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://media.licdn.com/dms/image/D4E16AQFNCK2t-uxkSA/profile-displaybackgroundimage-shrink_200_800/0/1673965366382?e=2147483647&v=beta&t=Pu-yT2ZBrN3Eu8hvfPs4J_xOP8OPWUGoRdPkUj1HzdA" alt="Los Angeles" class="d-block" style="width:100%;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.licdn.com/dms/image/D4E16AQFNCK2t-uxkSA/profile-displaybackgroundimage-shrink_200_800/0/1673965366382?e=2147483647&v=beta&t=Pu-yT2ZBrN3Eu8hvfPs4J_xOP8OPWUGoRdPkUj1HzdA" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.licdn.com/dms/image/D4E16AQFNCK2t-uxkSA/profile-displaybackgroundimage-shrink_200_800/0/1673965366382?e=2147483647&v=beta&t=Pu-yT2ZBrN3Eu8hvfPs4J_xOP8OPWUGoRdPkUj1HzdA" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<br>
+<div class="container">
+ <div class="row">
+
+    <div class="col-lg-6 video-box align-self-baseline w3-animate-left">
+    <!--<img src="assets/img/about.jpg" class="img-fluid" alt="">-->
+    <img src="https://media.licdn.com/dms/image/D4E03AQGx4H1QNEj3eA/profile-displayphoto-shrink_800_800/0/1673965340896?e=2147483647&v=beta&t=Iai22_4xsLh93V_5tnqiDIZN_vQsy8ONryYrPcuItfA" class="img-fluid" alt="" style="height:500px; aliceblue; margin-top:0%; padding-top:0%;">
+    <a href="https://www.youtube.com/embed/99qbtGJAfQ0" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+   </div>
+    
+
+
+   <div class="col-lg-6 pt-3 pt-lg-0 content w3-animate-right polaroid">
+    <h3>CHIEF FUNCTIONARY MESSAGE</h3>
+    <p class="font-italic">
+      Dear Friends,sDonors and well-wishers,</p>
+<p style="text-align: justify;">
+Heartly greetings from <B><i style="color:orange;">THE KALAM FOUNDETION  DEVELOPMENT SOCIETY </i></B> to all my friends, and well-wishers after completion years of the organization.
+
+
+Ever since the days of inception we have been concentrating our efforts on bringing out revolutionary and radical changes in developmental approach of the society. It all began with a group of just few committed people, but as time passed more and more enthusiastic and committed people came and joined us to strive for the envisioned changes. We endeavor for service to humanity in a multidimensional way, and is moving ahead to bring a visible and sustainable change in the society. We have worked hard keeping in mind our vision, mission and goal to bring changes that are acceptable and sustainable. The various sectional areas of work that we have undertaken till now involves livelihood, Water conservation, Upliftment of disable people, Child Right, disability welfare and malnutrition correction, healthcare intervention, water and sanitation, housing, women empowerment, financial literacy, save girl child drive, addressing issues related to migrants and access to portability entitlement, disaster preparedness and management & skill training initiatives etc. We are feeling proud and happy for helping the needy people by providing hand holding support in the field of livelihood, health and nutrition. We also go forward a step towards child health, care, girl’s education and security. </BR></BR></span>
+
+<span>THANK YOU </span><br>
+
+
+<span class="float-right"><strong>CHIEF FUNCTIONARY</strong></p>
+   
+<!--     <ul>
+      <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+      <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+      <li><i class="bx bx-check-double"></i> Voluptate repellendus pariatur reprehenderit corporis sint.</li>
+      <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+    </ul> -->
+
+  </div>
+
+</div>
+
+</div>
+
+ </div>
+
+</div>
+
+
+<br>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="w3-container w3-center w3-animate-left">
+  <div class="col">
+    <div class="card h-100 shadow-lg  mb-5 bg-body ">
+      <img src="https://images.pexels.com/photos/5909870/pexels-photo-5909870.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">New sustainability</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.</p>
+        <a href="#" class="btn btn-primary">Donate</a>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+  <div class="w3-container w3-center w3-animate-bottom">
+  <div class="col">
+    <div class="card h-100 shadow-lg  mb-5 bg-body ">
+      <img src="https://st3.depositphotos.com/1001071/14836/i/450/depositphotos_148366563-stock-photo-children-during-holi-celebration.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">free volunteering</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.</p>
+        <a href="#" class="btn btn-primary">Donate</a>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+  <div class="w3-container w3-center w3-animate-left">
+  <div class="col">
+    <div class="card h-100 shadow-lg mb-5 bg-body">
+       
+      
+      <img src="https://st2.depositphotos.com/1327777/7640/i/450/depositphotos_76402573-stock-photo-young-girl-holds-baby.jpg" class="card-img-top" alt="...">
+      <div class="card-body ">
+        <h5 class="card-title">free volunteering</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.</p>
+        <a href="#" class="btn btn-primary">Donate</a>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</div>
+<br>
+<div class="parallax2"><center class="center1"><h1>home</h1></center></div>
+
+<div class="p-5 bg-primary " data-aos="zoom-in">
+  <h1 style="text-align: center; color:white;  text-shadow: 5px 2px 8px black;" class="w3-animate-zoom">OUR IMPACT</h1>
+</div>
+
+
+<div class="container-fluid">
+ <div class="row p-3 justify-content-md-center bg-img2">
+    <div class="col-md-6 p-3">
+     <div class="card p-3 zoom" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+       <h4 class="title"><span class="glyphicon glyphicon-hand-right"></span><a href="">Working with the 7,521 women</a></h4>
+       <p class="description">Organized under SHG plateform - a democratic institution  owned and managed by women</p>
+
+      </div>
+    </div>
+
+    <div class="col-md-6 p-3">
+      <div class="card p-3 zoom" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <h4 class="title"><a href="">Spread across 14 States</a></h4>
+        <p class="description">Directly present in 251 vilages spread across 28 districts and 16 blocks in 14 states.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 p-3">
+      <div class="card p-3 zoom" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <h4 class="title"><a href="">Enterpreneurial Skill</a></h4>
+        <p class="description">Enterpreneurial skill of communities are channelized through the promotion of the 10 farmer producer Organizations.</p>
+      </div>
+    </div>
+    
+    <div class="col-md-6 p-3">
+      <div class="card p-3 zoom" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <h4 class="title"><a href="">Employment support</a></h4>
+              <p class="description">Employment support to arround 210 community resource persons and comunity service providers working with HSDS currently.</p>
+      </div>
+    </div>
+    
+    <div class="col-md-6 p-3">
+      <div class="card p-3 zoom" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <h4 class="title"><a href="">Livelihood Support and food security</a></h4>
+              <p class="description">Provided 5,586 families with live food support.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 p-3">
+      <div class="card p-3 zoom" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <h4 class="title"><a href="">Trained over 5000 grassroot workers</a></h4>
+        <p class="description">we Trained grassroot workers in different-2 categories</p>
+      </div>
+    </div>
+ </div>  
+
+    
+</div>
+
+<!--new line-->
+
+
+  <div class="container-fluid">
+
+    <div class="text-center p-5 bg-primary text-white ">
+      <h3>JOIN US IN INSPIRING DREAMS</h3>
+     
+      <p><button class="w3-button w3-yellow">DONATE</button></p>
+    </div>
+
+  </div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 py-5">
+      <div class="service-box">
+        <i class="fa fa-anchor"></i>
+        <h2>30000</h2>
+        <p>Live  Touched </p>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 py-5">
+      <div class="service-box">
+        <i class="fa bi bi-reception-4"></i>
+        <h2>14</h2>
+        <p>States Reached </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-4 py-5">
+      <div class="service-box">
+        <i class="fa bi bi-stopwatch"></i>
+        <h2>12</h2>
+        <p>Years of continue serving </p>
+
+      </div>
+
+    </div>
+   
+  </div>
+
+</div>
+
+
+<div>
+  <!-- Footer -->
+  <div class="img">
+<footer class="text-center text-lg-start bg-dark text-white ">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span> THE KALAM FOUNDETION DEVELOPMENT SOCIETY:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i  class="bi bi-facebook""></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="bi bi-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="bi fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>THE KALAM FOUNDATION
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="bi bi-house-door-fill"></i> New Railway road gurugram</p>
+          <p>
+            <i class="bi bi-envelope-open-fill"></i>
+            info@example.com
+          </p>
+          <p><i class="bi bi-telephone-fill"></i> + 01 234 567 88</p>
+          <p><i class="bi bi-phone-fill"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->  
+</div>
+</div>
+
+</body>
+</html>
+
+
